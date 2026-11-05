@@ -1,0 +1,56 @@
+\relax 
+\providecommand \babel@aux [2]{\global \let \babel@toc \@gobbletwo }
+\@nameuse{bbl@beforestart}
+\catcode `"\active 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{warden2018}
+\babel@aux{brazilian}{}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Divisão oficial do Speech Commands v0.02, feita por locutor.}}{1}{table.1}\protected@file@percent }
+\newlabel{tab:split}{{1}{1}{Divisão oficial do Speech Commands v0.02, feita por locutor}{table.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Número de clipes por palavra em cada partição. As $20$ palavras da esquerda são as principais do conjunto; as $15$ da direita têm cerca de metade dos exemplos.}}{1}{figure.1}\protected@file@percent }
+\newlabel{fig:dataset}{{1}{1}{Número de clipes por palavra em cada partição. As $20$ palavras da esquerda são as principais do conjunto; as $15$ da direita têm cerca de metade dos exemplos}{figure.1}{}}
+\citation{warden2018}
+\citation{davis1980}
+\citation{hochreiter1997}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Quatro clipes do conjunto. Primeira linha: forma de onda. Segunda: espectrograma log-mel normalizado, que é a entrada da rede. Terceira: o mesmo espectrograma depois do aumento de dados usado no treino (deslocamento, ruído de fundo e máscaras do SpecAugment).}}{3}{figure.2}\protected@file@percent }
+\newlabel{fig:audio}{{2}{3}{Quatro clipes do conjunto. Primeira linha: forma de onda. Segunda: espectrograma log-mel normalizado, que é a entrada da rede. Terceira: o mesmo espectrograma depois do aumento de dados usado no treino (deslocamento, ruído de fundo e máscaras do SpecAugment)}{figure.2}{}}
+\citation{park2019}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Arquitetura do classificador. Cada camada recorrente tem uma LSTM em cada sentido, com saídas concatenadas ($512$ valores por quadro); a segunda camada recebe a saída concatenada da primeira. Os números indicam a largura de cada bloco. Há \textit  {dropout} de $0{,}2$ entre as camadas LSTM e antes de cada camada linear.}}{4}{figure.3}\protected@file@percent }
+\newlabel{fig:model}{{3}{4}{Arquitetura do classificador. Cada camada recorrente tem uma LSTM em cada sentido, com saídas concatenadas ($512$ valores por quadro); a segunda camada recebe a saída concatenada da primeira. Os números indicam a largura de cada bloco. Há \textit {dropout} de $0{,}2$ entre as camadas LSTM e antes de cada camada linear}{figure.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Resultados de Treinamento}{5}{section.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Perda de treino (com suavização de rótulos, sobre clipes aumentados) e acurácia de treino e validação por época. A linha tracejada marca a época $36$, escolhida pela validação.}}{5}{figure.4}\protected@file@percent }
+\newlabel{fig:curves}{{4}{5}{Perda de treino (com suavização de rótulos, sobre clipes aumentados) e acurácia de treino e validação por época. A linha tracejada marca a época $36$, escolhida pela validação}{figure.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Perda e acurácia em algumas épocas. A perda de treino é medida nos clipes aumentados e inclui a suavização de rótulos.}}{5}{table.2}\protected@file@percent }
+\newlabel{tab:curve}{{2}{5}{Perda e acurácia em algumas épocas. A perda de treino é medida nos clipes aumentados e inclui a suavização de rótulos}{table.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Desempenho no Teste}{5}{section.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Métricas finais do modelo da época $36$.}}{6}{table.3}\protected@file@percent }
+\newlabel{tab:final}{{3}{6}{Métricas finais do modelo da época $36$}{table.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Precisão, revocação e F1 de cada palavra no conjunto de teste.}}{7}{figure.5}\protected@file@percent }
+\newlabel{fig:perclass}{{5}{7}{Precisão, revocação e F1 de cada palavra no conjunto de teste}{figure.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Análise dos Erros}{8}{section.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Matriz de confusão do teste, normalizada por linha (cada linha soma $100\%$). Os valores fora da diagonal a partir de $2\%$ estão anotados.}}{8}{figure.6}\protected@file@percent }
+\newlabel{fig:confusion}{{6}{8}{Matriz de confusão do teste, normalizada por linha (cada linha soma $100\%$). Os valores fora da diagonal a partir de $2\%$ estão anotados}{figure.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Os $15$ pares (palavra verdadeira $\to $ palavra prevista) mais frequentes entre os erros do teste.}}{9}{figure.7}\protected@file@percent }
+\newlabel{fig:topconf}{{7}{9}{Os $15$ pares (palavra verdadeira $\to $ palavra prevista) mais frequentes entre os erros do teste}{figure.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Erros com alta confiança e ruído nos rótulos}{9}{subsection.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Espectrogramas log-mel dos $12$ erros de teste com maior confiança, com a palavra verdadeira, a prevista e a probabilidade atribuída à classe prevista.}}{10}{figure.8}\protected@file@percent }
+\newlabel{fig:mistakes}{{8}{10}{Espectrogramas log-mel dos $12$ erros de teste com maior confiança, com a palavra verdadeira, a prevista e a probabilidade atribuída à classe prevista}{figure.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Robustez ao Ruído}{10}{section.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Acurácia de teste com ruído de fundo somado a uma SNR fixa.}}{10}{table.4}\protected@file@percent }
+\newlabel{tab:snr}{{4}{10}{Acurácia de teste com ruído de fundo somado a uma SNR fixa}{table.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Acurácia de teste em função da SNR do ruído somado aos clipes.}}{11}{figure.9}\protected@file@percent }
+\newlabel{fig:snr}{{9}{11}{Acurácia de teste em função da SNR do ruído somado aos clipes}{figure.9}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Calibração}{11}{section.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Esquerda: histograma da confiança nos acertos e nos erros do teste (eixo vertical em escala logarítmica). Direita: diagrama de confiabilidade; a diagonal tracejada corresponde a uma calibração perfeita.}}{11}{figure.10}\protected@file@percent }
+\newlabel{fig:conf}{{10}{11}{Esquerda: histograma da confiança nos acertos e nos erros do teste (eixo vertical em escala logarítmica). Direita: diagrama de confiabilidade; a diagonal tracejada corresponde a uma calibração perfeita}{figure.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}O que a Rede Aprendeu}{12}{section.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Projeção t-SNE da camada oculta de $512$ dimensões para $80$ clipes de teste de cada palavra. O rótulo de cada grupo está na posição média dos seus pontos.}}{12}{figure.11}\protected@file@percent }
+\newlabel{fig:tsne}{{11}{12}{Projeção t-SNE da camada oculta de $512$ dimensões para $80$ clipes de teste de cada palavra. O rótulo de cada grupo está na posição média dos seus pontos}{figure.11}{}}
+\bibcite{warden2018}{1}
+\bibcite{davis1980}{2}
+\bibcite{hochreiter1997}{3}
+\bibcite{park2019}{4}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusão}{13}{section.7}\protected@file@percent }
+\gdef \@abspage@last{13}
