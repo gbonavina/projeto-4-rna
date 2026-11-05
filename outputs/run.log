@@ -1,0 +1,61 @@
+Device: cuda
+35 classes | train: 84843 clips  val: 9981 clips  test: 11005 clips | speaker-disjoint split verified | loaded in 14s
+/mnt/hdd/home/gbonavina/GitHub/projeto-4-rna/src/speech_data.py:96: WavFileWarning: Chunk (non-data) not understood, skipping it.
+  sr, x = wavfile.read(p)
+Model parameters: 2.73M
+
+epoch  1/40  loss 3.3473  train acc 0.0995  val acc 0.2884  lr 1.1e-04  16s  *best
+epoch  2/40  loss 2.8511  train acc 0.2567  val acc 0.5343  lr 2.1e-04  15s  *best
+epoch  3/40  loss 2.3672  train acc 0.4195  val acc 0.6695  lr 3.6e-04  15s  *best
+epoch  4/40  loss 2.0540  train acc 0.5250  val acc 0.7544  lr 5.6e-04  15s  *best
+epoch  5/40  loss 1.8234  train acc 0.6067  val acc 0.8091  lr 7.9e-04  15s  *best
+epoch  6/40  loss 1.6626  train acc 0.6636  val acc 0.8443  lr 1.0e-03  15s  *best
+epoch  7/40  loss 1.5445  train acc 0.7076  val acc 0.8665  lr 1.3e-03  16s  *best
+epoch  8/40  loss 1.4651  train acc 0.7351  val acc 0.8718  lr 1.5e-03  15s  *best
+epoch  9/40  loss 1.3864  train acc 0.7632  val acc 0.8931  lr 1.7e-03  15s  *best
+epoch 10/40  loss 1.3323  train acc 0.7829  val acc 0.9056  lr 1.9e-03  15s  *best
+epoch 11/40  loss 1.2797  train acc 0.8000  val acc 0.9127  lr 2.0e-03  15s  *best
+epoch 12/40  loss 1.2363  train acc 0.8143  val acc 0.9103  lr 2.0e-03  15s
+epoch 13/40  loss 1.2009  train acc 0.8261  val acc 0.9184  lr 2.0e-03  15s  *best
+epoch 14/40  loss 1.1722  train acc 0.8360  val acc 0.9251  lr 2.0e-03  16s  *best
+epoch 15/40  loss 1.1464  train acc 0.8438  val acc 0.9234  lr 1.9e-03  13s
+epoch 16/40  loss 1.1225  train acc 0.8524  val acc 0.9279  lr 1.9e-03  14s  *best
+epoch 17/40  loss 1.1056  train acc 0.8583  val acc 0.9366  lr 1.8e-03  15s  *best
+epoch 18/40  loss 1.0845  train acc 0.8647  val acc 0.9372  lr 1.8e-03  15s  *best
+epoch 19/40  loss 1.0713  train acc 0.8677  val acc 0.9419  lr 1.7e-03  15s  *best
+epoch 20/40  loss 1.0592  train acc 0.8732  val acc 0.9436  lr 1.6e-03  15s  *best
+epoch 21/40  loss 1.0430  train acc 0.8767  val acc 0.9441  lr 1.5e-03  15s  *best
+epoch 22/40  loss 1.0249  train acc 0.8824  val acc 0.9435  lr 1.4e-03  15s
+epoch 23/40  loss 1.0151  train acc 0.8860  val acc 0.9454  lr 1.3e-03  15s  *best
+epoch 24/40  loss 0.9998  train acc 0.8914  val acc 0.9466  lr 1.2e-03  15s  *best
+epoch 25/40  loss 0.9876  train acc 0.8953  val acc 0.9515  lr 1.1e-03  15s  *best
+epoch 26/40  loss 0.9804  train acc 0.8971  val acc 0.9491  lr 1.0e-03  16s
+epoch 27/40  loss 0.9646  train acc 0.9029  val acc 0.9515  lr 8.9e-04  15s
+epoch 28/40  loss 0.9536  train acc 0.9050  val acc 0.9528  lr 7.8e-04  15s  *best
+epoch 29/40  loss 0.9439  train acc 0.9088  val acc 0.9550  lr 6.7e-04  15s  *best
+epoch 30/40  loss 0.9355  train acc 0.9116  val acc 0.9511  lr 5.7e-04  15s
+epoch 31/40  loss 0.9272  train acc 0.9139  val acc 0.9560  lr 4.7e-04  16s  *best
+epoch 32/40  loss 0.9185  train acc 0.9172  val acc 0.9570  lr 3.8e-04  15s  *best
+epoch 33/40  loss 0.9109  train acc 0.9203  val acc 0.9578  lr 2.9e-04  15s  *best
+epoch 34/40  loss 0.9022  train acc 0.9225  val acc 0.9588  lr 2.2e-04  15s  *best
+epoch 35/40  loss 0.8977  train acc 0.9246  val acc 0.9568  lr 1.5e-04  15s
+epoch 36/40  loss 0.8959  train acc 0.9242  val acc 0.9596  lr 9.9e-05  15s  *best
+epoch 37/40  loss 0.8904  train acc 0.9264  val acc 0.9590  lr 5.6e-05  15s
+epoch 38/40  loss 0.8881  train acc 0.9261  val acc 0.9593  lr 2.5e-05  15s
+epoch 39/40  loss 0.8883  train acc 0.9271  val acc 0.9589  lr 6.3e-06  15s
+epoch 40/40  loss 0.8868  train acc 0.9273  val acc 0.9593  lr 8.1e-09  15s
+
+Best epoch 36 (val acc 0.9596), chosen on validation only.
+
+TEST accuracy: 0.9509  (10465/11005)   chance: 0.0286
+
+Hardest words (test accuracy):
+  learn     0.839   most often confused with 'left' (11x)
+  tree      0.876   most often confused with 'three' (15x)
+  forward   0.890   most often confused with 'four' (10x)
+  bed       0.913   most often confused with 'left' (4x)
+  off       0.918   most often confused with 'up' (17x)
+  four      0.930   most often confused with 'forward' (11x)
+Easiest: stop 0.988, yes 0.981, six 0.980, zero 0.976, seven 0.973
+
+Saved results.json, plots and bilstm.pt to /mnt/hdd/home/gbonavina/GitHub/projeto-4-rna/outputs/speech

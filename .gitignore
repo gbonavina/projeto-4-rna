@@ -1,0 +1,32 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# --- Virtual environment (recreate with `uv sync`) ---
+.venv/
+
+# --- Dataset and caches (6+ GB; re-downloadable) ---
+# Speech Commands v0.02: http://download.tensorflow.org/data/speech_commands_v0.02.tar.gz
+data/
+
+# --- Model checkpoints (35 MB each; regenerate with `uv run python src/main.py`) ---
+*.pt
+*.pth
+*.ckpt
+
+# --- Audio exports from plot_audio.py ---
+outputs/**/*.wav
+
+# --- Optuna / experiment databases ---
+*.db
+
+# --- Notebooks, editors, OS ---
+.ipynb_checkpoints/
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
